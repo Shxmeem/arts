@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%">
+  <g stroke="#1e1e1e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    
+    <!-- Outer Main Desktop App Window -->
+    <rect x="25" y="25" width="950" height="570" rx="14" ry="12" />
+    
+    <!-- Top Bar -->
+    <line x1="25" y1="70" x2="975" y2="70" />
+    <circle cx="50" cy="48" r="5" fill="#1e1e1e" />
+    <circle cx="68" cy="48" r="5" fill="#1e1e1e" />
+    <circle cx="86" cy="48" r="5" fill="#1e1e1e" />
+    
+    <!-- Search / Template Marketplace Bar -->
+    <rect x="120" y="38" width="500" height="22" rx="6" />
+    <text x="135" y="53" font-family="sans-serif" font-size="11" fill="#1e1e1e" stroke="none">🔍 Search templates (Canva, Notion, Social, Planners)...</text>
+    
+    <text x="750" y="53" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">✨ My Workspace</text>
+    <rect x="850" y="38" width="100" height="22" rx="4" fill="none" />
+    <text x="865" y="53" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">+ Create New</text>
+
+    <!-- Sidebar Divider -->
+    <line x1="210" y1="70" x2="210" y2="595" />
+
+    <!-- ==================== SIDEBAR ==================== -->
+    <text x="40" y="98" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">CATEGORIES</text>
+    
+    <!-- Category Items -->
+    <rect x="35" y="112" width="160" height="28" rx="5" stroke-dasharray="2,2" />
+    <text x="48" y="130" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">🎨 Canva Graphics</text>
+    
+    <text x="48" y="162" font-family="sans-serif" font-size="11" fill="#1e1e1e" stroke="none">📝 Notion Dashboards</text>
+    <text x="48" y="192" font-family="sans-serif" font-size="11" fill="#1e1e1e" stroke="none">📱 Social Media Kits</text>
+    <text x="48" y="222" font-family="sans-serif" font-size="11" fill="#1e1e1e" stroke="none">📅 Digital Planners</text>
+    <text x="48" y="252" font-family="sans-serif" font-size="11" fill="#1e1e1e" stroke="none">📊 Deck Presentations</text>
+
+    <line x1="35" y1="275" x2="195" y2="275" />
+
+    <text x="40" y="300" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">SAVED TEMPLATES</text>
+    <text x="48" y="325" font-family="sans-serif" font-size="10" fill="#1e1e1e" stroke="none">★ Weekly Planner</text>
+    <text x="48" y="350" font-family="sans-serif" font-size="10" fill="#1e1e1e" stroke="none">★ IG Story Bundle</text>
+    <text x="48" y="375" font-family="sans-serif" font-size="10" fill="#1e1e1e" stroke="none">★ Project Tracker</text>
+
+    <!-- Bottom Sidebar Promo Box -->
+    <rect x="35" y="440" width="160" height="130" rx="8" />
+    <text x="50" y="465" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">🚀 PRO MEMBER</text>
+    <text x="50" y="485" font-family="sans-serif" font-size="9" fill="#1e1e1e" stroke="none">Get unlimited access</text>
+    <text x="50" y="498" font-family="sans-serif" font-size="9" fill="#1e1e1e" stroke="none">to 10,000+ templates.</text>
+    <rect x="50" y="518" width="130" height="26" rx="4" />
+    <text x="75" y="535" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">Upgrade Now</text>
+
+    <!-- ==================== MAIN CONTENT: TEMPLATE GALLERY & EDITOR ==================== -->
+    <text x="235" y="102" font-family="sans-serif" font-weight="bold" font-size="16" fill="#1e1e1e" stroke="none">Featured Templates &amp; Hubs</text>
+    <text x="820" y="102" font-family="sans-serif" font-size="11" fill="#1e1e1e" stroke="none">Filter: <tspan font-weight="bold">All Types ▾</tspan></text>
+
+    <line x1="210" y1="118" x2="975" y2="118" />
+
+    <!-- GRID CARD 1: NOTION DASHBOARD TEMPLATE -->
+    <rect x="235" y="135" width="345" height="210" rx="10" />
+    <!-- Notion Header Bar -->
+    <rect x="235" y="135" width="345" height="30" rx="10" />
+    <line x1="235" y1="165" x2="580" y2="165" />
+    <text x="250" y="155" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">📑 Notion Life OS Dashboard</text>
+    
+    <!-- Cover Banner inside Card 1 -->
+    <rect x="245" y="175" width="325" height="40" rx="4" />
+    <path d="M 255 200 Q 300 180 340 205 T 420 195" />
+    
+    <!-- Mini Notion Columns -->
+    <!-- Column A -->
+    <rect x="245" y="225" width="100" height="105" rx="4" />
+    <text x="252" y="240" font-family="sans-serif" font-weight="bold" font-size="9" fill="#1e1e1e" stroke="none">📌 To-Do List</text>
+    <rect x="252" y="248" width="6" height="6" /><line x1="262" y1="253" x2="330" y2="253" />
+    <rect x="252" y="260" width="6" height="6" fill="#1e1e1e" /><line x1="262" y1="265" x2="330" y2="265" />
+    <rect x="252" y="272" width="6" height="6" /><line x1="262" y1="277" x2="330" y2="277" />
+
+    <!-- Column B -->
+    <rect x="355" y="225" width="100" height="105" rx="4" />
+    <text x="362" y="240" font-family="sans-serif" font-weight="bold" font-size="9" fill="#1e1e1e" stroke="none">🎯 Goals 2026</text>
+    <rect x="362" y="250" width="86" height="12" rx="3" />
+    <rect x="362" y="268" width="86" height="12" rx="3" />
+    <rect x="362" y="286" width="86" height="12" rx="3" />
+
+    <!-- Column C -->
+    <rect x="465" y="225" width="105" height="105" rx="4" />
+    <text x="472" y="240" font-family="sans-serif" font-weight="bold" font-size="9" fill="#1e1e1e" stroke="none">📅 Calendar</text>
+    <path d="M 472 250 H 560 M 472 265 H 560 M 472 280 H 560" stroke-width="1.5" />
+    <path d="M 495 245 V 315 M 520 245 V 315 M 542 245 V 315" stroke-width="1.5" />
+
+    <!-- GRID CARD 2: CANVA SOCIAL MEDIA SUITE -->
+    <rect x="600" y="135" width="350" height="210" rx="10" />
+    <text x="615" y="158" font-family="sans-serif" font-weight="bold" font-size="12" fill="#1e1e1e" stroke="none">🎨 Canva Instagram Post Templates</text>
+    <line x1="600" y1="168" x2="950" y2="168" />
+
+    <!-- Post Mockup 1 -->
+    <rect x="615" y="180" width="95" height="115" rx="6" />
+    <circle cx="662" cy="215" r="18" />
+    <text x="630" y="250" font-family="sans-serif" font-weight="bold" font-size="9" fill="#1e1e1e" stroke="none">NEW DROP</text>
+    <rect x="630" y="260" width="65" height="14" rx="3" />
+
+    <!-- Post Mockup 2 -->
+    <rect x="725" y="180" width="95" height="115" rx="6" />
+    <text x="735" y="205" font-family="serif" font-weight="bold" font-size="12" fill="#1e1e1e" stroke="none">"QUOTE"</text>
+    <line x1="735" y1="215" x2="805" y2="215" />
+    <line x1="735" y1="225" x2="790" y2="225" />
+    <path d="M 735 250 L 765 275 L 805 240" stroke-width="1.5" />
+
+    <!-- Post Mockup 3 -->
+    <rect x="835" y="180" width="95" height="115" rx="6" />
+    <rect x="845" y="190" width="75" height="45" rx="3" />
+    <circle cx="882" cy="212" r="8" />
+    <text x="845" y="252" font-family="sans-serif" font-size="8" font-weight="bold" fill="#1e1e1e" stroke="none">5 TIPS FOR...</text>
+
+    <!-- Card 2 Action Button -->
+    <rect x="615" y="305" width="315" height="26" rx="5" />
+    <text x="705" y="322" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">Use Template in Canva ↗</text>
+
+    <!-- GRID CARD 3: PRESENTATION SLIDE DECK -->
+    <rect x="235" y="360" width="345" height="210" rx="10" />
+    <text x="250" y="383" font-family="sans-serif" font-weight="bold" font-size="12" fill="#1e1e1e" stroke="none">📊 Pitch Deck Presentation Slides</text>
+    <line x1="235" y1="393" x2="580" y2="393" />
+
+    <!-- Slide Canvas -->
+    <rect x="250" y="405" width="220" height="125" rx="6" />
+    <text x="265" y="430" font-family="sans-serif" font-weight="bold" font-size="13" fill="#1e1e1e" stroke="none">BUSINESS PLAN</text>
+    <text x="265" y="445" font-family="sans-serif" font-size="9" fill="#1e1e1e" stroke="none">Q3 Strategy &amp; Growth</text>
+    
+    <!-- Slide Bar Chart -->
+    <rect x="265" y="490" width="15" height="25" />
+    <rect x="290" y="475" width="15" height="40" />
+    <rect x="315" y="460" width="15" height="55" />
+    <rect x="340" y="480" width="15" height="35" />
+
+    <!-- Thumbnail Strip -->
+    <rect x="480" y="405" width="85" height="36" rx="4" />
+    <rect x="480" y="450" width="85" height="36" rx="4" />
+    <rect x="480" y="495" width="85" height="35" rx="4" />
+
+    <rect x="250" y="540" width="140" height="22" rx="4" />
+    <text x="270" y="555" font-family="sans-serif" font-weight="bold" font-size="9" fill="#1e1e1e" stroke="none">Duplicate Deck</text>
+
+    <!-- GRID CARD 4: DIGITAL PLANNER / TRACKER -->
+    <rect x="600" y="360" width="350" height="210" rx="10" />
+    <text x="615" y="383" font-family="sans-serif" font-weight="bold" font-size="12" fill="#1e1e1e" stroke="none">📅 Minimalist Habit &amp; Goal Tracker</text>
+    <line x1="600" y1="393" x2="950" y2="393" />
+
+    <!-- Table Sheet Style Grid -->
+    <rect x="615" y="405" width="320" height="125" rx="4" />
+    <line x1="615" y1="428" x2="935" y2="428" />
+    <line x1="615" y1="450" x2="935" y2="450" />
+    <line x1="615" y1="472" x2="935" y2="472" />
+    <line x1="615" y1="495" x2="935" y2="495" />
+
+    <line x1="710" y1="405" x2="710" y2="530" />
+    <line x1="765" y1="405" x2="765" y2="530" />
+    <line x1="820" y1="405" x2="820" y2="530" />
+    <line x1="875" y1="405" x2="875" y2="530" />
+
+    <text x="625" y="420" font-family="sans-serif" font-weight="bold" font-size="9" fill="#1e1e1e" stroke="none">Habit</text>
+    <text x="722" y="420" font-family="sans-serif" font-weight="bold" font-size="9" fill="#1e1e1e" stroke="none">Mon</text>
+    <text x="778" y="420" font-family="sans-serif" font-weight="bold" font-size="9" fill="#1e1e1e" stroke="none">Tue</text>
+    <text x="832" y="420" font-family="sans-serif" font-weight="bold" font-size="9" fill="#1e1e1e" stroke="none">Wed</text>
+    <text x="888" y="420" font-family="sans-serif" font-weight="bold" font-size="9" fill="#1e1e1e" stroke="none">Thu</text>
+
+    <text x="625" y="443" font-family="sans-serif" font-size="9" fill="#1e1e1e" stroke="none">Read 20m</text>
+    <circle cx="736" cy="440" r="4" fill="#1e1e1e" />
+    <circle cx="792" cy="440" r="4" fill="#1e1e1e" />
+    <circle cx="848" cy="440" r="4" fill="#1e1e1e" />
+    <circle cx="904" cy="440" r="4" />
+
+    <text x="625" y="465" font-family="sans-serif" font-size="9" fill="#1e1e1e" stroke="none">Workout</text>
+    <circle cx="736" cy="462" r="4" fill="#1e1e1e" />
+    <circle cx="792" cy="462" r="4" />
+    <circle cx="848" cy="462" r="4" fill="#1e1e1e" />
+    <circle cx="904" cy="462" r="4" />
+
+    <text x="625" y="487" font-family="sans-serif" font-size="9" fill="#1e1e1e" stroke="none">Meditate</text>
+    <circle cx="736" cy="484" r="4" fill="#1e1e1e" />
+    <circle cx="792" cy="484" r="4" fill="#1e1e1e" />
+    <circle cx="848" cy="484" r="4" fill="#1e1e1e" />
+    <circle cx="904" cy="484" r="4" fill="#1e1e1e" />
+
+    <rect x="615" y="540" width="140" height="22" rx="4" />
+    <text x="635" y="555" font-family="sans-serif" font-weight="bold" font-size="9" fill="#1e1e1e" stroke="none">Open Digital Sheet</text>
+
+  </g>
+</svg>
