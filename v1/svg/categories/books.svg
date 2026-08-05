@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%">
+  <g stroke="#1e1e1e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    
+    <!-- Outer Browser/App Window -->
+    <rect x="25" y="25" width="950" height="570" rx="14" ry="12" />
+    
+    <!-- Window Header -->
+    <line x1="25" y1="70" x2="975" y2="70" />
+    <circle cx="50" cy="48" r="5" fill="#1e1e1e" />
+    <circle cx="68" cy="48" r="5" fill="#1e1e1e" />
+    <circle cx="86" cy="48" r="5" fill="#1e1e1e" />
+    <text x="410" y="52" font-family="sans-serif" font-weight="bold" font-size="13" fill="#1e1e1e" stroke="none">Bookstore &amp; Digital Library UI</text>
+
+    <!-- Sidebar Divider -->
+    <line x1="220" y1="70" x2="220" y2="595" />
+
+    <!-- ==================== SIDEBAR NAVIGATION ==================== -->
+    <text x="45" y="98" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">MY LIBRARY</text>
+    
+    <rect x="38" y="112" width="165" height="30" rx="6" stroke-dasharray="2,2" />
+    <text x="50" y="131" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">📚 All Books</text>
+    
+    <text x="50" y="165" font-family="sans-serif" font-size="11" fill="#1e1e1e" stroke="none">📖 Currently Reading</text>
+    <text x="50" y="195" font-family="sans-serif" font-size="11" fill="#1e1e1e" stroke="none">🔖 Bookmarks &amp; Notes</text>
+    <text x="50" y="225" font-family="sans-serif" font-size="11" fill="#1e1e1e" stroke="none">🎧 Audiobooks</text>
+    <text x="50" y="255" font-family="sans-serif" font-size="11" fill="#1e1e1e" stroke="none">✅ Finished</text>
+
+    <line x1="38" y1="280" x2="200" y2="280" />
+
+    <text x="45" y="305" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">GENRES</text>
+    <text x="50" y="330" font-family="sans-serif" font-size="10" fill="#1e1e1e" stroke="none">• Fiction &amp; Novels</text>
+    <text x="50" y="355" font-family="sans-serif" font-size="10" fill="#1e1e1e" stroke="none">• Sci-Fi &amp; Fantasy</text>
+    <text x="50" y="380" font-family="sans-serif" font-size="10" fill="#1e1e1e" stroke="none">• Technology &amp; Code</text>
+    <text x="50" y="405" font-family="sans-serif" font-size="10" fill="#1e1e1e" stroke="none">• History &amp; Science</text>
+
+    <!-- Reading Goal Box -->
+    <rect x="38" y="445" width="165" height="120" rx="8" />
+    <text x="50" y="470" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">🎯 2026 Reading Goal</text>
+    <text x="50" y="490" font-family="sans-serif" font-size="10" fill="#1e1e1e" stroke="none">18 of 24 Books Read</text>
+    <!-- Progress Bar -->
+    <rect x="50" y="500" width="140" height="12" rx="6" />
+    <rect x="50" y="500" width="105" height="12" rx="6" fill="#1e1e1e" />
+    <text x="100" y="535" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">75% Complete</text>
+
+    <!-- ==================== MAIN CONTENT AREA ==================== -->
+    <text x="245" y="102" font-family="sans-serif" font-weight="bold" font-size="16" fill="#1e1e1e" stroke="none">Explore Book Collection</text>
+    <rect x="620" y="85" width="220" height="26" rx="6" />
+    <text x="632" y="102" font-family="sans-serif" font-size="10" fill="#1e1e1e" stroke="none">🔍 Search title, author, ISBN...</text>
+    <rect x="855" y="85" width="95" height="26" rx="6" />
+    <text x="872" y="102" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">+ Add Book</text>
+
+    <line x1="220" y1="120" x2="975" y2="120" />
+
+    <!-- FEATURED / CURRENTLY READING OPEN BOOK BANNER -->
+    <rect x="245" y="138" width="705" height="150" rx="10" />
+    
+    <!-- Open Book Illustration -->
+    <!-- Left Page -->
+    <path d="M 270 260 L 270 170 Q 340 160 405 175 L 405 265 Q 340 250 270 260 Z" />
+    <line x1="285" y1="185" x2="390" y2="192" />
+    <line x1="285" y1="200" x2="390" y2="207" />
+    <line x1="285" y1="215" x2="390" y2="222" />
+    <line x1="285" y1="230" x2="360" y2="236" />
+
+    <!-- Spine -->
+    <line x1="405" y1="175" x2="405" y2="265" stroke-width="3" />
+
+    <!-- Right Page -->
+    <path d="M 540 260 L 540 170 Q 470 160 405 175 L 405 265 Q 470 250 540 260 Z" />
+    <line x1="420" y1="192" x2="525" y2="185" />
+    <line x1="420" y1="207" x2="525" y2="200" />
+    <line x1="420" y1="222" x2="525" y2="215" />
+    <line x1="420" y1="236" x2="490" y2="230" />
+
+    <!-- Ribbon Bookmark -->
+    <path d="M 405 175 Q 410 210 425 240 L 433 232 L 438 245 Z" fill="#1e1e1e" />
+
+    <!-- Featured Details -->
+    <text x="565" y="172" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e1e1e" stroke="none">CURRENTLY READING</text>
+    <text x="565" y="195" font-family="sans-serif" font-weight="bold" font-size="18" fill="#1e1e1e" stroke="none">The Art of Creative Thought</text>
+    <text x="565" y="215" font-family="sans-serif" font-size="12" fill="#1e1e1e" stroke="none">by H. G. Wells  •  Chapter 12 of 20</text>
+    
+    <text x="565" y="242" font-family="sans-serif" font-size="10" fill="#1e1e1e" stroke="none">Progress: 64%</text>
+    <rect x="640" y="233" width="180" height="10" rx="5" />
+    <rect x="640" y="233" width="115" height="10" rx="5" fill="#1e1e1e" />
+    
+    <rect x="835" y="223" width="100" height="30" rx="6" />
+    <text x="852" y="242" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">Resume 📖</text>
+
+    <!-- BOOKSHELF / GRID SECTION -->
+    <text x="245" y="320" font-family="sans-serif" font-weight="bold" font-size="14" fill="#1e1e1e" stroke="none">Recommended Bookshelf</text>
+    <line x1="245" y1="327" x2="395" y2="327" />
+
+    <!-- GRID ITEM 1: BOOK COVER -->
+    <g>
+      <rect x="245" y="345" width="120" height="170" rx="6" />
+      <rect x="255" y="355" width="100" height="85" rx="4" />
+      <!-- Doodle Cover Art -->
+      <circle cx="305" cy="390" r="22" />
+      <path d="M 290 415 L 305 380 L 320 415" />
+      <text x="255" y="455" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">Cosmic Odyssey</text>
+      <text x="255" y="470" font-family="sans-serif" font-size="9" fill="#1e1e1e" stroke="none">A. E. Sterling</text>
+      <text x="255" y="490" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">★ 4.8</text>
+      <rect x="315" y="480" width="40" height="20" rx="4" />
+      <text x="323" y="494" font-family="sans-serif" font-size="9" font-weight="bold" fill="#1e1e1e" stroke="none">Read</text>
+    </g>
+
+    <!-- GRID ITEM 2: BOOK COVER -->
+    <g>
+      <rect x="390" y="345" width="120" height="170" rx="6" />
+      <rect x="400" y="355" width="100" height="85" rx="4" />
+      <!-- Doodle Cover Art -->
+      <path d="M 420 415 Q 450 360 480 415" stroke-width="2" />
+      <circle cx="470" cy="375" r="8" />
+      <text x="400" y="455" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">Silent Mountains</text>
+      <text x="400" y="470" font-family="sans-serif" font-size="9" fill="#1e1e1e" stroke="none">D. E. Vance</text>
+      <text x="400" y="490" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">★ 4.6</text>
+      <rect x="460" y="480" width="40" height="20" rx="4" />
+      <text x="468" y="494" font-family="sans-serif" font-size="9" font-weight="bold" fill="#1e1e1e" stroke="none">Read</text>
+    </g>
+
+    <!-- GRID ITEM 3: BOOK COVER -->
+    <g>
+      <rect x="535" y="345" width="120" height="170" rx="6" />
+      <rect x="545" y="355" width="100" height="85" rx="4" />
+      <!-- Doodle Cover Art -->
+      <rect x="565" y="370" width="60" height="50" rx="3" />
+      <line x1="575" y1="385" x2="615" y2="385" />
+      <line x1="575" y1="395" x2="610" y2="395" />
+      <line x1="575" y1="405" x2="600" y2="405" />
+      <text x="545" y="455" font-family="sans-serif" font-weight="bold" font-size="11" fill="#1e1e1e" stroke="none">Code Architecture</text>
+      <text x="545" y="470" font-family="sans-serif" font-size="9" fill="#1e1e1e" stroke="none">Martin F.</text>
+      <text x="545" y="490" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">★ 4.9</text>
+      <rect x="605" y="480" width="40" height="20" rx="4" />
+      <text x="613" y="494" font-family="sans-serif" font-size="9" font-weight="bold" fill="#1e1e1e" stroke="none">Read</text>
+    </g>
+
+    <!-- GRID ITEM 4: BOOK STACK VERTICAL DISPLAY -->
+    <g>
+      <rect x="680" y="345" width="270" height="225" rx="8" />
+      <text x="695" y="370" font-family="sans-serif" font-weight="bold" font-size="12" fill="#1e1e1e" stroke="none">📚 Stacked Series Collection</text>
+
+      <!-- Stacked Books Illustration -->
+      <!-- Book 1 (Bottom) -->
+      <rect x="710" y="515" width="210" height="28" rx="4" />
+      <text x="725" y="533" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">Volume III — Deep Space</text>
+
+      <!-- Book 2 -->
+      <rect x="720" y="487" width="190" height="28" rx="4" />
+      <text x="735" y="505" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">Volume II — Orbit Systems</text>
+
+      <!-- Book 3 -->
+      <rect x="715" y="459" width="200" height="28" rx="4" />
+      <text x="730" y="477" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">Volume I — Atmosphere</text>
+
+      <!-- Book 4 (Top tilted) -->
+      <g transform="rotate(-5 730 430)">
+        <rect x="725" y="425" width="180" height="26" rx="4" />
+        <text x="740" y="442" font-family="sans-serif" font-weight="bold" font-size="10" fill="#1e1e1e" stroke="none">Prequel — Ignition</text>
+      </g>
+    </g>
+
+    <!-- Bookshelf Base Lines under covers -->
+    <line x1="235" y1="525" x2="665" y2="525" stroke-width="3" />
+    <path d="M 235 525 L 245 540 M 665 525 L 655 540" stroke-width="2" />
+
+  </g>
+</svg>
