@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <!-- Sketchy Line Filter for Hand-Drawn Doodle Vibe -->
+    <filter id="sketch-rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+
+    <style>
+      .ink-line { stroke: #2C2825; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .ink-thin { stroke: #2C2825; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .ink-thick { stroke: #2C2825; stroke-width: 5.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      
+      .fill-can { fill: #81B29A; }
+      .fill-water { fill: #A8DADC; }
+      .fill-accent { fill: #E07A5F; }
+      .fill-yellow { fill: #F4A261; }
+      .fill-white { fill: #FCF9F2; }
+    </style>
+  </defs>
+
+  <g filter="url(#sketch-rough)">
+
+    <!-- SPARKLES & ACCENTS -->
+    <path class="ink-thin" d="M 120,100 Q 120,112 108,112 Q 120,112 120,124 Q 120,112 132,112 Q 120,112 120,100 Z" fill="#2C2825" opacity="0.8" />
+    <path class="ink-thin" d="M 490,120 Q 490,132 478,132 Q 490,132 490,144 Q 490,132 502,132 Q 490,132 490,120 Z" fill="#2C2825" opacity="0.8" />
+    <path d="M 100,260 C 100,252 90,248 84,255 C 78,248 68,252 68,260 C 68,270 84,278 84,278 C 84,278 100,270 100,260 Z" fill="#E07A5F" stroke="#2C2825" stroke-width="2.5" stroke-linejoin="round" />
+
+    <!-- WATER PUDDLE ON GROUND -->
+    <ellipse cx="440" cy="410" rx="90" ry="18" class="ink-line" fill="#A8DADC" opacity="0.85" />
+    <ellipse cx="450" cy="410" rx="60" ry="10" fill="#FCF9F2" opacity="0.5" />
+    <!-- Small splashed droplets on ground -->
+    <ellipse cx="540" cy="395" rx="8" ry="4" fill="#A8DADC" class="ink-thin" />
+    <ellipse cx="550" cy="420" rx="10" ry="5" fill="#A8DADC" class="ink-thin" />
+    <ellipse cx="320" cy="425" rx="12" ry="5" fill="#A8DADC" class="ink-thin" />
+
+    <!-- WATER STREAM GUSHING OUT FROM SPOUT HEAD -->
+    <path class="ink-thick" fill="#A8DADC" d="M 342,312 C 380,312 450,330 455,405 C 430,405 385,360 338,328 Z" />
+
+    <!-- Dynamic splash arc lines -->
+    <path class="ink-thin" d="M 350,295 C 410,290 475,330 475,400" />
+    <path class="ink-thin" d="M 330,340 C 370,350 410,380 420,410" />
+
+    <!-- Splashing Droplets flying outwards -->
+    <path class="ink-line" fill="#A8DADC" d="M 440,310 C 435,295 450,295 445,310 C 445,318 440,318 440,310 Z" />
+    <path class="ink-line" fill="#A8DADC" d="M 475,340 C 470,328 482,328 478,340 C 478,346 475,346 475,340 Z" />
+    <path class="ink-line" fill="#A8DADC" d="M 390,285 C 385,275 398,275 393,285 Z" />
+
+    <circle cx="410" cy="290" r="4" fill="#A8DADC" class="ink-thin" />
+    <circle cx="485" cy="370" r="5" fill="#A8DADC" class="ink-thin" />
+    <circle cx="505" cy="390" r="3" fill="#A8DADC" class="ink-thin" />
+
+    <!-- TIPPED WATERING CAN -->
+    <g transform="translate(200, 260) rotate(32)">
+
+      <!-- Handle on Back -->
+      <path class="ink-thick" d="M -110,-10 C -160,-20 -150,60 -110,70" fill="none" />
+
+      <!-- Main Can Body -->
+      <path d="M -110,-40 L 40,-30 C 50,-30 55,-20 55,-10 L 55,70 C 55,80 50,90 40,90 L -110,100 C -120,100 -125,90 -125,80 L -125,-20 C -125,-30 -120,-40 -110,-40 Z" fill="#81B29A" class="ink-thick" />
+      
+      <!-- Top Opening / Rim -->
+      <ellipse cx="-30" cy="-35" rx="35" ry="12" class="ink-line" fill="#2C2825" />
+      <ellipse cx="-30" cy="-35" rx="28" ry="8" fill="#A8DADC" />
+
+      <!-- Spout Stem -->
+      <path class="ink-thick" d="M 50,0 L 150,-20 L 155,10 L 50,30 Z" fill="#81B29A" />
+
+      <!-- Rose / Shower Head -->
+      <g transform="translate(152, -5)">
+        <ellipse cx="10" cy="0" rx="12" ry="22" class="ink-thick" fill="#F4A261" />
+        <!-- Sprinkle Holes -->
+        <circle cx="12" cy="-10" r="1.5" fill="#2C2825" />
+        <circle cx="14" cy="-3" r="1.5" fill="#2C2825" />
+        <circle cx="14" cy="4" r="1.5" fill="#2C2825" />
+        <circle cx="12" cy="11" r="1.5" fill="#2C2825" />
+      </g>
+
+      <!-- Side Grip Handle -->
+      <path class="ink-line" d="M -80,-38 C -40,-90 10,-80 30,-32" fill="none" />
+
+      <!-- Decorative Accent Line & Dot -->
+      <path class="ink-thin" d="M -124,30 C -40,35 10,25 54,30" stroke-dasharray="5,4" />
+      <circle cx="-30" cy="30" r="12" fill="#E07A5F" stroke="#2C2825" stroke-width="2.5" />
+
+    </g>
+
+  </g>
+</svg>
