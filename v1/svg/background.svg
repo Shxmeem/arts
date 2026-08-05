@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1200 700">
+  <defs>
+    <filter id="sketch-rough" width="120%" height="120%" x="-10%" y="-10%">
+      <feTurbulence baseFrequency=".04" numOctaves="2" result="noise" type="fractalNoise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="sketch-rough-light" width="120%" height="120%" x="-10%" y="-10%">
+      <feTurbulence baseFrequency=".035" numOctaves="2" result="noise" type="fractalNoise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <style>
+      .ink-line { stroke-width: 4; stroke: #2c2825; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .ink-thick { stroke-width: 5.5; stroke: #2c2825; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .ink-thin { stroke-width: 2.5; stroke: #2c2825; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .fill-terracotta { fill: #e07a5f; }
+      .fill-stem { fill: #81b29a; stroke: #2c2825; stroke-width: 2.5; }
+    </style>
+  </defs>
+
+  <!-- ==================== LEFT: WILDFLOWERS ==================== -->
+  <g filter="url(#sketch-rough-light)" transform="translate(-80, 0)">
+    <!-- doodle marks -->
+    <path fill="#2C2825" d="M 110,90 Q 110,102 98,102 Q 110,102 110,114 Q 110,102 122,102 Q 110,102 110,90 Z" class="ink-thin" opacity=".8"/>
+    <path fill="#2C2825" d="M 490,130 Q 490,142 478,142 Q 490,142 490,154 Q 490,142 502,142 Q 490,142 490,130 Z" class="ink-thin" opacity=".8"/>
+    <circle cx="150" cy="140" r="3" fill="#2C2825"/>
+    <circle cx="450" cy="90" r="2.5" fill="#2C2825"/>
+    <circle cx="200" cy="80" r="2" fill="#2C2825"/>
+    <circle cx="410" cy="180" r="3" fill="#2C2825"/>
+
+    <!-- stem 1 -->
+    <path d="M 180,480 C 170,380 200,280 185,190" class="ink-line"/>
+    <path d="M 178,390 C 140,380 120,360 135,345 C 150,335 172,365 178,390 Z" class="fill-stem"/>
+    <path d="M 182,310 C 220,300 235,280 220,265 C 200,255 185,285 182,310 Z" class="fill-stem"/>
+
+    <!-- flower 1 -->
+    <g transform="translate(185, 190)">
+      <path fill="#E07A5F" d="M 0,-10 C -25,-55 -65,-30 -40,-5 C -65,15 -35,55 -5,25 C 20,55 55,25 30,-5 C 55,-30 20,-55 0,-10 Z" class="ink-line"/>
+      <path fill="#F2CC8F" d="M -15,-20 C -35,-45 -55,-20 -30,0 C -50,20 -20,40 0,15 C 20,40 45,15 20,0 C 40,-20 15,-45 -15,-20 Z" class="ink-thin" opacity=".6"/>
+      <circle cx="0" cy="0" r="14" fill="#2C2825"/>
+      <circle cx="0" cy="0" r="8" fill="#E9C46A"/>
+      <line x1="0" x2="0" y1="-14" y2="-22" class="ink-thin"/>
+      <line x1="14" x2="22" y1="0" y2="0" class="ink-thin"/>
+      <line x1="0" x2="0" y1="14" y2="22" class="ink-thin"/>
+      <line x1="-14" x2="-22" y1="0" y2="0" class="ink-thin"/>
+    </g>
+
+    <!-- stem 2 -->
+    <path d="M 300,500 C 310,380 290,260 300,140" class="ink-line"/>
+    <path d="M 298,420 C 250,410 230,380 250,365 C 270,355 292,390 298,420 Z" class="fill-stem"/>
+    <path d="M 301,320 C 350,310 370,280 350,265 C 330,255 308,290 301,320 Z" class="fill-stem"/>
+
+    <!-- flower 2 -->
+    <g transform="translate(300, 140)">
+      <path fill="#E9C46A" d="M -8,-10 C -12,-45 12,-45 8,-10 Z" class="ink-line"/>
+      <path fill="#E9C46A" d="M 10,-8 C 45,-12 45,12 10,8 Z" class="ink-line"/>
+      <path fill="#E9C46A" d="M 8,10 C 12,45 -12,45 -8,10 Z" class="ink-line"/>
+      <path fill="#E9C46A" d="M -10,8 C -45,12 -45,-12 -10,-8 Z" class="ink-line"/>
+      <path fill="#F4A261" d="M 6,-6 C 32,-32 42,-12 6,-6 Z" class="ink-line"/>
+      <path fill="#F4A261" d="M 6,6 C 32,32 12,42 6,6 Z" class="ink-line"/>
+      <path fill="#F4A261" d="M -6,6 C -32,32 -42,12 -6,6 Z" class="ink-line"/>
+      <path fill="#F4A261" d="M -6,-6 C -32,-32 -12,-42 -6,-6 Z" class="ink-line"/>
+      <ellipse cx="0" cy="0" fill="#2C2825" rx="18" ry="16"/>
+      <path stroke="#FCF9F2" d="M -12,-4 C -6,-10 6,-10 12,-4" class="ink-thin"/>
+      <circle cx="-4" cy="-2" r="2" fill="#FCF9F2"/>
+      <circle cx="4" cy="-2" r="2" fill="#FCF9F2"/>
+    </g>
+
+    <!-- stem 3 -->
+    <path d="M 420,490 C 410,400 425,290 415,160" class="ink-line"/>
+    <path d="M 418,370 C 450,360 460,340 445,330 C 430,320 420,345 418,370 Z" class="fill-stem"/>
+
+    <!-- flower 3 -->
+    <g transform="translate(415, 160)">
+      <ellipse cx="-12" cy="70" fill="#D6A2E8" class="ink-line" rx="10" ry="6"/>
+      <ellipse cx="12" cy="65" fill="#D6A2E8" class="ink-line" rx="10" ry="6"/>
+      <ellipse cx="-14" cy="45" fill="#A8DADC" class="ink-line" rx="11" ry="7"/>
+      <ellipse cx="14" cy="40" fill="#A8DADC" class="ink-line" rx="11" ry="7"/>
+      <ellipse cx="-12" cy="20" fill="#D6A2E8" class="ink-line" rx="10" ry="6"/>
+      <ellipse cx="12" cy="15" fill="#D6A2E8" class="ink-line" rx="10" ry="6"/>
+      <ellipse cx="-10" cy="-5" fill="#A8DADC" class="ink-line" rx="9" ry="6"/>
+      <ellipse cx="10" cy="-10" fill="#A8DADC" class="ink-line" rx="9" ry="6"/>
+      <ellipse cx="0" cy="-28" fill="#D6A2E8" class="ink-line" rx="8" ry="10"/>
+    </g>
+
+    <!-- small extras -->
+    <path d="M 120,470 C 110,410 90,360 70,320" class="ink-thin"/>
+    <path d="M 112,440 Q 90,430 85,440" class="ink-thin"/>
+    <path d="M 103,410 Q 80,400 75,410" class="ink-thin"/>
+    <path d="M 94,380 Q 70,370 65,380" class="ink-thin"/>
+    <path d="M 83,350 Q 60,340 55,350" class="ink-thin"/>
+
+    <path d="M 480,480 C 490,430 510,380 520,330" class="ink-thin"/>
+    <circle cx="520" cy="330" r="6" fill="#F2CC8F" class="ink-thin"/>
+    <circle cx="510" cy="350" r="5" fill="#E07A5F" class="ink-thin"/>
+    <circle cx="500" cy="375" r="5" fill="#F2CC8F" class="ink-thin"/>
+    <circle cx="490" cy="400" r="4" fill="#E07A5F" class="ink-thin"/>
+
+    <g transform="translate(300, 470)">
+      <path d="M 0,-5 C -25,-25 -45,-5 -20,10 C -10,15 0,-5 0,-5 Z" class="fill-terracotta ink-line"/>
+      <path d="M 0,-5 C 25,-25 45,-5 20,10 C 10,15 0,-5 0,-5 Z" class="fill-terracotta ink-line"/>
+      <circle cx="0" cy="-5" r="6" fill="#2C2825"/>
+      <path d="M -3,0 C -12,25 -25,45 -35,55" class="ink-line"/>
+      <path d="M 3,0 C 10,25 20,45 28,55" class="ink-line"/>
+    </g>
+
+    <g transform="translate(210, 110) rotate(-15)">
+      <path fill="#F2CC8F" d="M 0,0 C -15,-18 -25,-2 -5,3 C -20,12 -12,22 0,0 Z" class="ink-thin"/>
+      <path fill="#F2CC8F" d="M 0,0 C 15,-18 25,-2 5,3 C 20,12 12,22 0,0 Z" class="ink-thin"/>
+      <line x1="0" x2="0" y1="-5" y2="8" class="ink-thick"/>
+      <path d="M 0,-5 Q -5,-12 -8,-10" class="ink-thin"/>
+      <path d="M 0,-5 Q 5,-12 8,-10" class="ink-thin"/>
+    </g>
+  </g>
+
+  <!-- ==================== CENTER: CAMERA ON A STICK (raised) ==================== -->
+  <g filter="url(#sketch-rough)" transform="translate(460, -80)">
+    <!-- doodle marks -->
+    <path d="M 400,60 L 415,40" class="ink-thin"/>
+    <path d="M 420,75 L 445,65" class="ink-thin"/>
+    <path d="M 425,95 L 450,100" class="ink-thin"/>
+    <path fill="#2C2825" d="M 120,70 Q 120,85 105,85 Q 120,85 120,100 Q 120,85 135,85 Q 120,85 120,70 Z" class="ink-thin" opacity=".8"/>
+    <path fill="#2C2825" d="M 470,250 Q 470,262 458,262 Q 470,262 470,274 Q 470,262 482,262 Q 470,262 470,250 Z" class="ink-thin" opacity=".8"/>
+    <path fill="#E07A5F" stroke="#2C2825" stroke-linejoin="round" stroke-width="2.5" d="M 130,260 C 130,252 120,248 114,255 C 108,248 98,252 98,260 C 98,270 114,278 114,278 C 114,278 130,270 130,260 Z"/>
+    <circle cx="485" cy="180" r="4" fill="#2C2825"/>
+    <circle cx="105" cy="150" r="3" fill="#2C2825"/>
+
+    <!-- stick base -->
+    <ellipse cx="300" cy="580" fill="#2C2825" rx="14" ry="6"/>
+    <path d="M 296,480 L 297,580" class="ink-line"/>
+    <path d="M 304,480 L 303,580" class="ink-line"/>
+    <rect width="16" height="10" x="292" y="472" fill="#2C2825" class="ink-line" rx="2"/>
+
+    <!-- stick middle -->
+    <path d="M 294,360 L 295,472" class="ink-line"/>
+    <path d="M 306,360 L 305,472" class="ink-line"/>
+    <rect width="20" height="12" x="290" y="350" fill="#EAE3D2" class="ink-line" rx="2"/>
+    <line x1="290" x2="310" y1="356" y2="356" class="ink-thin"/>
+
+    <!-- stick upper -->
+    <path d="M 292,230 L 293,350" class="ink-thick"/>
+    <path d="M 308,230 L 307,350" class="ink-thick"/>
+    <line x1="293" x2="307" y1="260" y2="260" class="ink-thin"/>
+    <line x1="293" x2="307" y1="280" y2="280" class="ink-thin"/>
+    <line x1="293" x2="307" y1="300" y2="300" class="ink-thin"/>
+    <line x1="293" x2="307" y1="320" y2="320" class="ink-thin"/>
+
+    <!-- handle/grip -->
+    <rect width="36" height="14" x="282" y="218" fill="#EAE3D2" class="ink-line" rx="3"/>
+    <path fill="#2C2825" d="M 318,220 L 328,220 C 331,220 333,222 333,224 L 333,226 C 333,228 331,230 328,230 L 318,230" class="ink-line"/>
+    <rect width="16" height="14" x="292" y="205" fill="#2C2825" class="ink-thick" rx="2"/>
+
+    <!-- camera side arms -->
+    <path d="M 135,135 C 120,135 115,155 135,160" class="ink-line"/>
+    <path d="M 465,135 C 480,135 485,155 465,160" class="ink-line"/>
+    <ellipse cx="120" cy="147" class="ink-thin" rx="4" ry="7"/>
+    <ellipse cx="480" cy="147" class="ink-thin" rx="4" ry="7"/>
+
+    <!-- top camera parts -->
+    <rect width="30" height="15" x="180" y="60" fill="#EAE3D2" class="ink-line" rx="3"/>
+    <line x1="190" x2="190" y1="60" y2="67" class="ink-thin"/>
+    <line x1="200" x2="200" y1="60" y2="67" class="ink-thin"/>
+    <path fill="#EAE3D2" d="M 370,75 L 370,57 C 370,53 395,53 395,57 L 395,75" class="ink-line"/>
+    <line x1="375" x2="390" y1="63" y2="63" class="ink-thin"/>
+
+    <path fill="#FCF9F2" d="M 255,75 L 265,50 C 267,45 273,43 280,43 L 320,43 C 327,43 333,45 335,50 L 345,75" class="ink-thick"/>
+    <path d="M 285,43 L 285,37 L 315,37 L 315,43" class="ink-thin"/>
+
+    <!-- camera body -->
+    <rect width="330" height="132" x="135" y="75" fill="#FCF9F2" class="ink-thick" rx="20"/>
+    <path d="M 136,115 C 230,117 370,113 464,115" class="ink-line"/>
+    <path stroke-dasharray="6 5" d="M 140,121 C 240,123 360,119 460,121" class="ink-thin"/>
+
+    <!-- flash / indicator -->
+    <circle cx="175" cy="97" r="6" fill="#E07A5F" stroke="#2C2825" stroke-width="2.5"/>
+    <rect width="34" height="20" x="390" y="89" fill="#2C2825" class="ink-line" rx="4"/>
+    <rect width="26" height="13" x="394" y="92" fill="#FCF9F2" class="ink-thin" rx="3"/>
+    <line x1="412" x2="402" y1="93" y2="104" class="ink-thin"/>
+    <circle cx="365" cy="97" r="4.5" fill="#F4A261" class="ink-line"/>
+
+    <!-- lens -->
+    <circle cx="300" cy="145" r="54" fill="#EAE3D2" class="ink-thick"/>
+    <circle cx="300" cy="145" r="46" fill="#FCF9F2" class="ink-line"/>
+    <circle cx="300" cy="145" r="35" fill="#2C2825" class="ink-line"/>
+    <circle cx="300" cy="145" r="27" fill="#3D3835" class="ink-thin"/>
+    <path fill="#FCF9F2" d="M 282,127 A 23 23 0 0 1 318,127 A 19 19 0 0 0 282,127 Z" opacity=".85"/>
+    <circle cx="312" cy="155" r="3" fill="#FCF9F2" opacity=".7"/>
+  </g>
+
+  <!-- ==================== RIGHT: FLOWER POT ==================== -->
+  <g filter="url(#sketch-rough)" transform="translate(820, 0)">
+    <!-- doodle marks -->
+    <path fill="#2C2825" d="M 120,100 Q 120,112 108,112 Q 120,112 120,124 Q 120,112 132,112 Q 120,112 120,100 Z" class="ink-thin" opacity=".8"/>
+    <path fill="#2C2825" d="M 480,120 Q 480,132 468,132 Q 480,132 480,144 Q 480,132 492,132 Q 480,132 480,120 Z" class="ink-thin" opacity=".8"/>
+    <circle cx="150" cy="160" r="3" fill="#2C2825"/>
+    <circle cx="450" cy="90" r="2.5" fill="#2C2825"/>
+    <path fill="#E07A5F" stroke="#2C2825" stroke-linejoin="round" stroke-width="2.5" d="M 110,380 C 110,372 100,368 94,375 C 88,368 78,372 78,380 C 78,390 94,398 94,398 C 94,398 110,390 110,380 Z"/>
+
+    <!-- shadow -->
+    <ellipse cx="300" cy="520" fill="#2C2825" opacity=".15" rx="100" ry="14"/>
+
+    <!-- stems -->
+    <path d="M 300,340 C 295,260 305,200 300,140" class="ink-line"/>
+    <path d="M 290,340 C 260,280 210,240 200,180" class="ink-line"/>
+    <path d="M 310,340 C 340,280 390,240 400,180" class="ink-line"/>
+
+    <!-- leaves -->
+    <path fill="#81B29A" d="M 298,280 C 250,270 230,240 250,225 C 270,215 292,250 298,280 Z" class="ink-line"/>
+    <path fill="#81B29A" d="M 302,230 C 350,220 370,190 350,175 C 330,165 308,200 302,230 Z" class="ink-line"/>
+    <path fill="#81B29A" d="M 245,230 C 210,210 190,190 205,180 C 220,170 240,200 245,230 Z" class="ink-line"/>
+    <path fill="#81B29A" d="M 355,230 C 390,210 410,190 395,180 C 380,170 360,200 355,230 Z" class="ink-line"/>
+
+    <!-- center flower -->
+    <g transform="translate(300, 140)">
+      <path fill="#E9C46A" d="M -8,-10 C -12,-45 12,-45 8,-10 Z" class="ink-line"/>
+      <path fill="#E9C46A" d="M 10,-8 C 45,-12 45,12 10,8 Z" class="ink-line"/>
+      <path fill="#E9C46A" d="M 8,10 C 12,45 -12,45 -8,10 Z" class="ink-line"/>
+      <path fill="#E9C46A" d="M -10,8 C -45,12 -45,-12 -10,-8 Z" class="ink-line"/>
+      <path fill="#F4A261" d="M 6,-6 C 32,-32 42,-12 6,-6 Z" class="ink-line"/>
+      <path fill="#F4A261" d="M 6,6 C 32,32 12,42 6,6 Z" class="ink-line"/>
+      <path fill="#F4A261" d="M -6,6 C -32,32 -42,12 -6,6 Z" class="ink-line"/>
+      <path fill="#F4A261" d="M -6,-6 C -32,-32 -12,-42 -6,-6 Z" class="ink-line"/>
+      <circle cx="0" cy="0" r="18" fill="#2C2825"/>
+      <circle cx="-4" cy="-3" r="2.5" fill="#FCF9F2"/>
+      <circle cx="4" cy="-3" r="2.5" fill="#FCF9F2"/>
+    </g>
+
+    <!-- side flowers -->
+    <g transform="translate(200, 180)">
+      <path fill="#E07A5F" d="M 0,-8 C -20,-40 -50,-20 -30,-5 C -50,10 -25,40 -5,20 C 15,40 40,20 20,-5 C 40,-20 15,-40 0,-8 Z" class="ink-line"/>
+      <circle cx="0" cy="0" r="12" fill="#2C2825"/>
+      <circle cx="0" cy="0" r="6" fill="#E9C46A"/>
+    </g>
+
+    <g transform="translate(400, 180)">
+      <path fill="#E07A5F" d="M 0,-8 C -20,-40 -50,-20 -30,-5 C -50,10 -25,40 -5,20 C 15,40 40,20 20,-5 C 40,-20 15,-40 0,-8 Z" class="ink-line"/>
+      <circle cx="0" cy="0" r="12" fill="#2C2825"/>
+      <circle cx="0" cy="0" r="6" fill="#E9C46A"/>
+    </g>
+
+    <!-- pot rim -->
+    <ellipse cx="300" cy="340" fill="#3D3835" class="ink-line" rx="90" ry="20"/>
+
+    <!-- pot body -->
+    <path fill="#E07A5F" d="M 215,370 L 235,500 C 238,515 362,515 365,500 L 385,370 Z" class="ink-thick"/>
+    <rect width="200" height="45" x="200" y="325" fill="#E07A5F" class="ink-thick" rx="10"/>
+    <path stroke-dasharray="6 4" d="M 205,340 C 270,345 330,345 395,340" class="ink-thin"/>
+  </g>
+</svg>
