@@ -1,0 +1,432 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <defs>
+    <!-- Doodle Wobbly Line Filter -->
+    <filter id="doodle-filter" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+
+    <!-- Notebook Grid Paper Pattern -->
+    <pattern id="grid-paper" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#e0e8f0" stroke-width="1.2" />
+    </pattern>
+
+    <!-- Diagonal Shadow Hatching -->
+    <pattern id="shadow-hatch" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#222222" stroke-width="1.2" opacity="0.15" />
+    </pattern>
+
+    <style>
+      .bg-paper { fill: #fcfaf2; }
+      .bg-grid { fill: url(#grid-paper); }
+      .margin-line { stroke: #ffadad; stroke-width: 2; stroke-dasharray: 6,4; }
+      
+      /* Ink Lines */
+      .ink {
+        fill: none;
+        stroke: #222222;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#doodle-filter);
+      }
+      .ink-thin {
+        fill: none;
+        stroke: #222222;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#doodle-filter);
+      }
+      .ink-thick {
+        fill: none;
+        stroke: #222222;
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#doodle-filter);
+      }
+
+      /* Color Palette Fills */
+      .fill-yellow { fill: #ffea00; }
+      .fill-pink { fill: #ff85a1; }
+      .fill-blue { fill: #70d6ff; }
+      .fill-purple { fill: #cdb4db; }
+      .fill-green { fill: #99e2b4; }
+      .fill-orange { fill: #ffd166; }
+      .fill-dark { fill: #222222; }
+      .fill-shadow { fill: url(#shadow-hatch); }
+
+      /* Typography */
+      .doodle-text {
+        font-family: "Comic Sans MS", "Marker Felt", "Comic Neue", cursive, sans-serif;
+        font-weight: bold;
+        fill: #222222;
+        filter: url(#doodle-filter);
+      }
+    </style>
+  </defs>
+
+  <!-- BACKGROUND PAPER -->
+  <rect width="1000" height="700" class="bg-paper" />
+  <rect width="1000" height="700" class="bg-grid" />
+  <line x1="65" y1="0" x2="65" y2="700" class="margin-line" />
+
+  <!-- DECORATIVE BACKGROUND SKETCHES -->
+  <g class="ink-thin" opacity="0.3">
+    <!-- Hanger Background Doodles -->
+    <path d="M 25 120 L 45 100 Q 55 90 45 80 Q 35 70 45 60 L 55 70" />
+    <path d="M 15 120 L 55 120 L 35 140 Z" />
+    <path d="M 940 220 L 970 200 Q 980 190 970 180 Q 960 170 970 160" />
+    <!-- Sparkles -->
+    <path d="M 920 80 L 925 95 L 940 100 L 925 105 L 920 120 L 915 105 L 900 100 L 915 95 Z" />
+    <path d="M 30 500 L 33 510 L 45 513 L 33 516 L 30 528 L 27 516 L 15 513 L 27 510 Z" />
+  </g>
+
+  <!-- MAIN UI WINDOW FRAME -->
+  <g id="main-frame">
+    <!-- Frame Shadow -->
+    <rect x="95" y="40" width="860" height="625" rx="20" class="fill-shadow" />
+    <!-- Main Window Background -->
+    <rect x="85" y="30" width="860" height="625" rx="20" fill="#ffffff" class="ink-thick" />
+    <rect x="93" y="38" width="844" height="609" rx="14" class="ink-thin" />
+  </g>
+
+  <!-- HEADER BAR -->
+  <g id="header">
+    <!-- Title Tag Badge -->
+    <path d="M 115 20 L 380 20 L 360 75 L 115 75 Z" class="fill-yellow ink-thick" />
+    <text x="135" y="57" class="doodle-text" font-size="28" letter-spacing="1">WARDROBE &amp; SHOP</text>
+
+    <!-- Currency Display: Gems -->
+    <g transform="translate(560, 40)">
+      <rect x="0" y="0" width="130" height="36" rx="10" class="fill-shadow" />
+      <rect x="-4" y="-4" width="130" height="36" rx="10" fill="#fff" class="ink" />
+      <!-- Gem Icon -->
+      <polygon points="12,14 22,4 32,14 22,28" class="fill-blue ink-thin" />
+      <text x="42" y="19" class="doodle-text" font-size="16">1,250</text>
+      <!-- Add Button -->
+      <circle cx="112" cy="14" r="10" class="fill-green ink-thin" />
+      <text x="108" y="20" class="doodle-text" font-size="16">+</text>
+    </g>
+
+    <!-- Currency Display: Gold Coins -->
+    <g transform="translate(710, 40)">
+      <rect x="0" y="0" width="140" height="36" rx="10" class="fill-shadow" />
+      <rect x="-4" y="-4" width="140" height="36" rx="10" fill="#fff" class="ink" />
+      <!-- Coin Icon -->
+      <circle cx="16" cy="14" r="12" class="fill-yellow ink-thin" />
+      <text x="12" y="20" class="doodle-text" font-size="14">$</text>
+      <text x="36" y="19" class="doodle-text" font-size="16">99,400</text>
+      <!-- Add Button -->
+      <circle cx="122" cy="14" r="10" class="fill-green ink-thin" />
+      <text x="118" y="20" class="doodle-text" font-size="16">+</text>
+    </g>
+
+    <!-- Close Button -->
+    <g transform="translate(880, 35)">
+      <rect x="0" y="0" width="40" height="40" rx="10" class="fill-pink ink-thick" />
+      <path d="M 12 12 L 28 28 M 28 12 L 12 28" class="ink-thick" />
+    </g>
+  </g>
+
+  <!-- NAVIGATION TABS -->
+  <g id="nav-tabs" transform="translate(120, 95)">
+    <!-- Tab 1: Bundles (Active) -->
+    <g transform="translate(0, 0)">
+      <path d="M 0 30 L 10 0 L 130 0 L 140 30 Z" class="fill-shadow" />
+      <path d="M -3 30 L 7 -3 L 127 -3 L 137 30 Z" fill="#fff" class="ink-thick" />
+      <path d="M 5 30 L 15 5 L 120 5 L 130 30 Z" class="fill-orange ink-thin" />
+      <text x="25" y="20" class="doodle-text" font-size="16">BUNDLES</text>
+      <!-- Star Badge on active tab -->
+      <polygon points="125,-2 128,5 136,5 129,10 132,17 125,12 118,17 121,10 114,5 122,5" class="fill-yellow ink-thin" />
+    </g>
+
+    <!-- Tab 2: Outfits -->
+    <g transform="translate(150, 0)">
+      <path d="M 0 30 L 10 5 L 125 5 L 135 30 Z" class="fill-shadow" />
+      <path d="M -3 30 L 7 2 L 122 2 L 132 30 Z" fill="#fff" class="ink" />
+      <text x="25" y="22" class="doodle-text" font-size="15" opacity="0.7">OUTFITS</text>
+    </g>
+
+    <!-- Tab 3: Hats & Gear -->
+    <g transform="translate(290, 0)">
+      <path d="M 0 30 L 10 5 L 125 5 L 135 30 Z" class="fill-shadow" />
+      <path d="M -3 30 L 7 2 L 122 2 L 132 30 Z" fill="#fff" class="ink" />
+      <text x="32" y="22" class="doodle-text" font-size="15" opacity="0.7">GEAR</text>
+    </g>
+
+    <!-- Tab 4: Skins -->
+    <g transform="translate(430, 0)">
+      <path d="M 0 30 L 10 5 L 115 5 L 125 30 Z" class="fill-shadow" />
+      <path d="M -3 30 L 7 2 L 112 2 L 122 30 Z" fill="#fff" class="ink" />
+      <text x="28" y="22" class="doodle-text" font-size="15" opacity="0.7">SKINS</text>
+    </g>
+  </g>
+
+  <!-- LEFT PANEL: CHARACTER MANNEQUIN / STAGE -->
+  <g id="character-stage" transform="translate(115, 135)">
+    <!-- Stage Box -->
+    <rect x="0" y="0" width="350" height="495" rx="16" class="fill-shadow" />
+    <rect x="-6" y="-6" width="350" height="495" rx="16" fill="#f4f9ff" class="ink-thick" />
+
+    <!-- Spotlight / Rays Sketch -->
+    <path d="M 40 0 L 175 400 L 310 0 Z" fill="#fff" opacity="0.6" />
+    <path d="M 175 10 L 60 480 M 175 10 L 290 480" class="ink-thin" stroke-dasharray="6,6" opacity="0.3" />
+
+    <!-- Stage Pedestal -->
+    <ellipse cx="170" cy="430" rx="110" ry="30" class="fill-shadow" />
+    <ellipse cx="165" cy="425" rx="110" ry="30" class="fill-purple ink-thick" />
+    <ellipse cx="165" cy="425" rx="90" ry="20" class="fill-yellow ink-thin" />
+
+    <!-- Rarity Tag Floating -->
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="110" height="30" rx="8" class="fill-pink ink" />
+      <text x="12" y="20" class="doodle-text" font-size="13" fill="#fff">LEGENDARY!</text>
+    </g>
+
+    <!-- CHARACTER DOODLE (Dressed in Cyber-Ninja Costume) -->
+    <g id="character-doodle" transform="translate(165, 190)">
+      <!-- Aura / Glow Sketch -->
+      <path d="M -50 -20 Q -80 80 -40 180 Q 0 230 50 200 Q 100 120 70 -10 Q 0 -60 -50 -20 Z" class="fill-yellow" opacity="0.3" />
+
+      <!-- Shadow under feet -->
+      <ellipse cx="0" cy="210" rx="45" ry="12" class="fill-dark" opacity="0.2" />
+
+      <!-- Cape / Wings -->
+      <path d="M -20 40 C -70 20, -90 90, -80 140 C -50 120, -30 110, -15 90 Z" class="fill-purple ink" />
+      <path d="M 20 40 C 70 20, 90 90, 80 140 C 50 120, 30 110, 15 90 Z" class="fill-purple ink" />
+
+      <!-- Legs / Boots -->
+      <path d="M -25 120 L -30 190 L -10 200 L -10 130 Z" class="fill-dark ink" />
+      <path d="M 25 120 L 30 190 L 10 200 L 10 130 Z" class="fill-dark ink" />
+      <!-- Boot Details -->
+      <path d="M -30 170 L -10 175 M 30 170 L 10 175" class="ink-thin" stroke="#fff" />
+
+      <!-- Body / Armor Suit -->
+      <path d="M -25 40 L 25 40 L 30 125 L -30 125 Z" class="fill-blue ink-thick" />
+      <!-- Belt & Buckle -->
+      <rect x="-32" y="105" width="64" height="15" rx="3" class="fill-yellow ink" />
+      <rect x="-10" y="100" width="20" height="25" rx="4" class="fill-pink ink" />
+      <!-- Chest Emblem (Skull/Star) -->
+      <polygon points="0,55 6,68 20,68 9,76 13,90 0,80 -13,90 -9,76 -20,68 -6,68" class="fill-yellow ink-thin" />
+
+      <!-- Arms / Gloves -->
+      <!-- Left Arm holding Sword -->
+      <path d="M -25 45 L -55 75 L -45 85 L -20 55 Z" class="fill-blue ink" />
+      <circle cx="-55" cy="85" r="12" class="fill-pink ink" /> <!-- Glove -->
+      <!-- Giant Doodle Sword -->
+      <path d="M -60 90 L -100 20 L -80 10 L -45 75 Z" class="fill-yellow ink-thick" />
+      <path d="M -75 35 L -55 80" class="ink-thin" />
+
+      <!-- Right Arm -->
+      <path d="M 25 45 L 50 70 L 40 80 L 20 55 Z" class="fill-blue ink" />
+      <circle cx="48" cy="78" r="12" class="fill-pink ink" />
+
+      <!-- Head / Ninja Helmet -->
+      <circle cx="0" cy="0" r="38" class="fill-dark ink-thick" />
+      <!-- Helmet Horns/Ears -->
+      <path d="M -25 -25 L -45 -55 L -10 -35 Z" class="fill-pink ink" />
+      <path d="M 25 -25 L 45 -55 L 10 -35 Z" class="fill-pink ink" />
+      <!-- Cyber Visor / Eyes -->
+      <path d="M -28 -8 Q 0 -20 28 -8 Q 20 15 -28 -8 Z" class="fill-blue ink-thick" />
+      <path d="M -15 -5 L 15 -5" stroke="#fff" stroke-width="4" class="ink-thin" />
+    </g>
+
+    <!-- Rotate / Zoom Control Buttons -->
+    <g transform="translate(260, 420)">
+      <circle cx="0" cy="0" r="18" class="fill-orange ink" />
+      <path d="M -8 -2 A 10 10 0 1 1 5 8 M 5 8 L 0 8 M 5 8 L 5 2" class="ink-thin" />
+      <text x="-18" y="28" class="doodle-text" font-size="10">ROTATE</text>
+    </g>
+
+    <!-- Outfit Name Banner -->
+    <g transform="translate(25, 435)">
+      <rect x="0" y="0" width="230" height="42" rx="10" class="fill-yellow ink-thick" />
+      <text x="18" y="26" class="doodle-text" font-size="16">CYBER NEON NINJA</text>
+    </g>
+  </g>
+
+  <!-- RIGHT PANEL: BUNDLES & COSTUMES GRID -->
+  <g id="catalog-grid" transform="translate(485, 135)">
+
+    <!-- ITEM CARD 1: Cyber Bundle (EQUIPPED / SELECTED) -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="210" height="230" rx="14" class="fill-shadow" />
+      <rect x="-5" y="-5" width="210" height="230" rx="14" fill="#fff" class="ink-thick" stroke-dasharray="none" />
+      <!-- Selection Border Highlight -->
+      <rect x="-9" y="-9" width="218" height="238" rx="18" class="ink-thick" stroke="#ff85a1" />
+
+      <!-- Card Header / Tag -->
+      <rect x="10" y="10" width="80" height="22" rx="6" class="fill-purple ink-thin" />
+      <text x="18" y="25" class="doodle-text" font-size="11">BUNDLE</text>
+
+      <!-- Discount Tag -->
+      <path d="M 150 5 L 195 5 L 195 30 L 150 30 Z" class="fill-pink ink-thin" />
+      <text x="156" y="22" class="doodle-text" font-size="12" fill="#fff">-40%</text>
+
+      <!-- Item Preview Sketch (Helmet & Swords) -->
+      <g transform="translate(100, 95)">
+        <circle cx="0" cy="0" r="30" class="fill-yellow ink-thin" />
+        <!-- Mini Helmet Doodle -->
+        <circle cx="0" cy="-2" r="18" class="fill-dark ink" />
+        <path d="M -12 -5 Q 0 -12 12 -5 Q 8 8 -12 -5 Z" class="fill-blue ink-thin" />
+        <!-- Crossed Swords behind -->
+        <path d="M -25 -25 L 25 25 M 25 -25 L -25 25" class="ink-thick" />
+      </g>
+
+      <!-- Item Title -->
+      <text x="15" y="160" class="doodle-text" font-size="15">Neon Cyber Pack</text>
+      <text x="15" y="178" class="doodle-text" font-size="11" opacity="0.6">5 Items Included</text>
+
+      <!-- Price / Owned State -->
+      <rect x="10" y="188" width="180" height="30" rx="8" class="fill-green ink" />
+      <text x="55" y="208" class="doodle-text" font-size="14">EQUIPPED!</text>
+    </g>
+
+    <!-- ITEM CARD 2: Pirate Captain Outfit -->
+    <g transform="translate(225, 0)">
+      <rect x="0" y="0" width="210" height="230" rx="14" class="fill-shadow" />
+      <rect x="-5" y="-5" width="210" height="230" rx="14" fill="#fff" class="ink" />
+
+      <rect x="10" y="10" width="75" height="22" rx="6" class="fill-orange ink-thin" />
+      <text x="18" y="25" class="doodle-text" font-size="11">OUTFIT</text>
+
+      <!-- Item Preview Sketch (Pirate Hat & Eyepatch) -->
+      <g transform="translate(100, 95)">
+        <circle cx="0" cy="0" r="30" class="fill-blue ink-thin" opacity="0.4" />
+        <!-- Pirate Hat -->
+        <path d="M -35 5 Q 0 -25 35 5 Q 15 -5 -15 -5 Z" class="fill-dark ink" />
+        <path d="M -12 -2 Q 0 -15 12 -2" class="fill-yellow ink-thin" />
+        <!-- Skull on hat -->
+        <circle cx="0" cy="-8" r="4" fill="#fff" class="ink-thin" />
+        <!-- Eyepatch Head -->
+        <circle cx="0" cy="15" r="12" class="fill-orange ink-thin" />
+        <line x1="-12" y1="8" x2="12" y2="18" class="ink-thick" />
+        <circle cx="-3" cy="14" r="4" class="fill-dark" />
+      </g>
+
+      <text x="15" y="160" class="doodle-text" font-size="15">Space Pirate</text>
+      <text x="15" y="178" class="doodle-text" font-size="11" opacity="0.6">Hat + Coat + Hook</text>
+
+      <!-- Price Button -->
+      <rect x="10" y="188" width="180" height="30" rx="8" class="fill-yellow ink-thin" />
+      <polygon points="55,198 62,190 70,198 62,208" class="fill-blue ink-thin" />
+      <text x="80" y="208" class="doodle-text" font-size="14">800 Gems</text>
+    </g>
+
+    <!-- ITEM CARD 3: Dino Onesie -->
+    <g transform="translate(0, 250)">
+      <rect x="0" y="0" width="210" height="230" rx="14" class="fill-shadow" />
+      <rect x="-5" y="-5" width="210" height="230" rx="14" fill="#fff" class="ink" />
+
+      <rect x="10" y="10" width="90" height="22" rx="6" class="fill-pink ink-thin" />
+      <text x="18" y="25" class="doodle-text" font-size="11">RARE SUIT</text>
+
+      <!-- Item Preview Sketch (Dino Head) -->
+      <g transform="translate(100, 95)">
+        <circle cx="0" cy="0" r="30" class="fill-green ink-thin" opacity="0.3" />
+        <!-- Dino Hood -->
+        <path d="M -25 15 C -30 -20, 20 -30, 25 5 C 25 20, -10 25, -25 15 Z" class="fill-green ink" />
+        <!-- Dino Teeth -->
+        <polygon points="-15,5 -10,12 -5,5 0,12 5,5 10,12 15,5" fill="#fff" class="ink-thin" />
+        <!-- Dino Spikes -->
+        <polygon points="-18,-12 -28,-20 -10,-20" class="fill-orange ink-thin" />
+        <polygon points="-5,-22 -10,-32 5,-27" class="fill-orange ink-thin" />
+        <!-- Eye -->
+        <circle cx="10" cy="-5" r="4" fill="#fff" class="ink" />
+        <circle cx="11" cy="-5" r="1.5" class="fill-dark" />
+      </g>
+
+      <text x="15" y="160" class="doodle-text" font-size="15">Dino-Roar Suit</text>
+      <text x="15" y="178" class="doodle-text" font-size="11" opacity="0.6">Full Body Costume</text>
+
+      <!-- Price Button (Coins) -->
+      <rect x="10" y="188" width="180" height="30" rx="8" class="fill-yellow ink-thin" />
+      <circle cx="50" cy="203" r="8" class="fill-yellow ink-thin" />
+      <text x="47" y="208" class="doodle-text" font-size="11">$</text>
+      <text x="68" y="208" class="doodle-text" font-size="14">15,000</text>
+    </g>
+
+    <!-- ITEM CARD 4: Wizard / Magic Set -->
+    <g transform="translate(225, 250)">
+      <rect x="0" y="0" width="210" height="230" rx="14" class="fill-shadow" />
+      <rect x="-5" y="-5" width="210" height="230" rx="14" fill="#fff" class="ink" />
+
+      <rect x="10" y="10" width="80" height="22" rx="6" class="fill-purple ink-thin" />
+      <text x="18" y="25" class="doodle-text" font-size="11">BUNDLE</text>
+
+      <!-- Item Preview Sketch (Wizard Hat & Wand) -->
+      <g transform="translate(100, 95)">
+        <circle cx="0" cy="0" r="30" class="fill-purple ink-thin" opacity="0.3" />
+        <!-- Wizard Hat -->
+        <path d="M -30 15 L 0 -35 L 20 10 Z" class="fill-purple ink" />
+        <ellipse cx="-2" cy="14" rx="30" ry="8" class="fill-purple ink" />
+        <!-- Stars on hat -->
+        <polygon points="-2,-5 0,-10 3,-5 8,-5 4,-2 6,3 0,0 -5,3 -3,-2 -8,-5" class="fill-yellow" />
+        <!-- Magic Wand -->
+        <line x1="10" y1="10" x2="35" y2="-15" class="ink-thick" stroke="#222" />
+        <polygon points="35,-15 38,-22 45,-20 40,-13 44,-7 37,-10 32,-14" class="fill-yellow ink-thin" />
+      </g>
+
+      <text x="15" y="160" class="doodle-text" font-size="15">Astro Mage Set</text>
+      <text x="15" y="178" class="doodle-text" font-size="11" opacity="0.6">Hat + Robe + Staff</text>
+
+      <!-- Price Button -->
+      <rect x="10" y="188" width="180" height="30" rx="8" class="fill-yellow ink-thin" />
+      <polygon points="55,198 62,190 70,198 62,208" class="fill-blue ink-thin" />
+      <text x="80" y="208" class="doodle-text" font-size="14">1,200 Gems</text>
+    </g>
+
+  </g> <!-- END CATALOG GRID -->
+
+  <!-- BOTTOM ACTION BAR / FOOTER -->
+  <g id="footer-bar" transform="translate(485, 580)">
+    <!-- Info / Stats Box -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="18" class="doodle-text" font-size="13">SET BONUS:</text>
+      <text x="85" y="18" class="doodle-text" font-size="13" fill="#ff85a1">+15% Speed &amp; Fancy Glow</text>
+      <!-- Small Doodle Stars -->
+      <path d="M 0 30 L 120 30" class="ink-thin" stroke-dasharray="3,3" />
+    </g>
+
+    <!-- Buy / Equip Main CTA Button -->
+    <g transform="translate(230, -5)">
+      <rect x="0" y="0" width="200" height="55" rx="14" class="fill-shadow" />
+      <rect x="-4" y="-4" width="200" height="55" rx="14" class="fill-green ink-thick" />
+      <text x="32" y="32" class="doodle-text" font-size="22" fill="#222">BUY BUNDLE</text>
+      <!-- Sparkles around button -->
+      <path d="M -12 10 L -15 20 L -25 22 L -15 25 L -12 35 L -9 25 L 1 22 L -9 20 Z" class="fill-yellow ink-thin" />
+      <path d="M 205 20 L 208 27 L 215 28 L 208 30 L 205 37 L 202 30 L 195 28 L 202 27 Z" class="fill-yellow ink-thin" />
+    </g>
+  </g>
+
+  <!-- SIDE SCROLLBAR DOODLE -->
+  <g id="scrollbar" transform="translate(925, 230)">
+    <rect x="0" y="0" width="12" height="380" rx="6" class="fill-paper ink-thin" />
+    <!-- Scroll Thumb -->
+    <rect x="-2" y="20" width="16" height="70" rx="8" class="fill-orange ink" />
+    <!-- Lines on thumb for grip -->
+    <line x1="2" y1="48" x2="10" y2="48" class="ink-thin" />
+    <line x1="2" y1="55" x2="10" y2="55" class="ink-thin" />
+    <line x1="2" y1="62" x2="10" y2="62" class="ink-thin" />
+  </g>
+
+  <!-- FLOATING DOODLE ANNOTATIONS / LITTLE DETAILS -->
+  <!-- Hand-drawn Arrow pointing to Bundle -->
+  <g class="ink-thin" transform="translate(415, 80)">
+    <path d="M 0 0 Q 30 -20 55 10" />
+    <path d="M 55 10 L 45 5 M 55 10 L 52 -2" />
+    <text x="-45" y="-10" class="doodle-text" font-size="12" transform="rotate(-10)">HOT ITEM!</text>
+  </g>
+
+  <!-- Little Tape Pieces on Frame Corners -->
+  <g class="ink-thin" opacity="0.6">
+    <!-- Top Left Tape -->
+    <polygon points="75,25 115,15 120,35 80,45" fill="#ffea00" />
+    <!-- Bottom Right Tape -->
+    <polygon points="920,640 960,630 965,650 925,660" fill="#ffea00" />
+  </g>
+
+</svg>
+
