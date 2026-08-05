@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Sketchy Line Filter for Doodle Style -->
+    <filter id="sketch-rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+
+    <style>
+      .ink-line { stroke: #2C2825; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .ink-thin { stroke: #2C2825; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .ink-thick { stroke: #2C2825; stroke-width: 5.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      
+      .fill-terracotta { fill: #E07A5F; }
+      .fill-yellow { fill: #F4A261; }
+      .fill-soft-yellow { fill: #E9C46A; }
+      .fill-green { fill: #81B29A; }
+      .fill-soil { fill: #3D3835; }
+      .fill-white { fill: #FCF9F2; }
+    </style>
+  </defs>
+
+  <g filter="url(#sketch-rough)">
+
+    <!-- SPARKLES & DOODLE ACCENTS -->
+    <path class="ink-thin" d="M 120,100 Q 120,112 108,112 Q 120,112 120,124 Q 120,112 132,112 Q 120,112 120,100 Z" fill="#2C2825" opacity="0.8" />
+    <path class="ink-thin" d="M 480,120 Q 480,132 468,132 Q 480,132 480,144 Q 480,132 492,132 Q 480,132 480,120 Z" fill="#2C2825" opacity="0.8" />
+    <circle cx="150" cy="160" r="3" fill="#2C2825" />
+    <circle cx="450" cy="90" r="2.5" fill="#2C2825" />
+    <path d="M 110,380 C 110,372 100,368 94,375 C 88,368 78,372 78,380 C 78,390 94,398 94,398 C 94,398 110,390 110,380 Z" fill="#E07A5F" stroke="#2C2825" stroke-width="2.5" stroke-linejoin="round" />
+
+    <!-- BASE SHADOW UNDER POT -->
+    <ellipse cx="300" cy="520" rx="100" ry="14" fill="#2C2825" opacity="0.15" />
+
+    <!-- STEMS AND LEAVES -->
+    <path class="ink-line" d="M 300,340 C 295,260 305,200 300,140" />
+    <path class="ink-line" d="M 290,340 C 260,280 210,240 200,180" />
+    <path class="ink-line" d="M 310,340 C 340,280 390,240 400,180" />
+
+    <!-- Leaves -->
+    <path d="M 298,280 C 250,270 230,240 250,225 C 270,215 292,250 298,280 Z" fill="#81B29A" class="ink-line" />
+    <path d="M 302,230 C 350,220 370,190 350,175 C 330,165 308,200 302,230 Z" fill="#81B29A" class="ink-line" />
+    <path d="M 245,230 C 210,210 190,190 205,180 C 220,170 240,200 245,230 Z" fill="#81B29A" class="ink-line" />
+    <path d="M 355,230 C 390,210 410,190 395,180 C 380,170 360,200 355,230 Z" fill="#81B29A" class="ink-line" />
+
+    <!-- FLOWERS -->
+
+    <!-- Center Flower -->
+    <g transform="translate(300, 140)">
+      <path class="ink-line" fill="#E9C46A" d="M -8,-10 C -12,-45 12,-45 8,-10 Z" />
+      <path class="ink-line" fill="#E9C46A" d="M 10,-8 C 45,-12 45,12 10,8 Z" />
+      <path class="ink-line" fill="#E9C46A" d="M 8,10 C 12,45 -12,45 -8,10 Z" />
+      <path class="ink-line" fill="#E9C46A" d="M -10,8 C -45,12 -45,-12 -10,-8 Z" />
+      <path class="ink-line" fill="#F4A261" d="M 6,-6 C 32,-32 42,-12 6,-6 Z" />
+      <path class="ink-line" fill="#F4A261" d="M 6,6 C 32,32 12,42 6,6 Z" />
+      <path class="ink-line" fill="#F4A261" d="M -6,6 C -32,32 -42,12 -6,6 Z" />
+      <path class="ink-line" fill="#F4A261" d="M -6,-6 C -32,-32 -12,-42 -6,-6 Z" />
+      <circle cx="0" cy="0" r="18" fill="#2C2825" />
+      <circle cx="-4" cy="-3" r="2.5" fill="#FCF9F2" />
+      <circle cx="4" cy="-3" r="2.5" fill="#FCF9F2" />
+    </g>
+
+    <!-- Left Flower -->
+    <g transform="translate(200, 180)">
+      <path d="M 0,-8 C -20,-40 -50,-20 -30,-5 C -50,10 -25,40 -5,20 C 15,40 40,20 20,-5 C 40,-20 15,-40 0,-8 Z" fill="#E07A5F" class="ink-line" />
+      <circle cx="0" cy="0" r="12" fill="#2C2825" />
+      <circle cx="0" cy="0" r="6" fill="#E9C46A" />
+    </g>
+
+    <!-- Right Flower -->
+    <g transform="translate(400, 180)">
+      <path d="M 0,-8 C -20,-40 -50,-20 -30,-5 C -50,10 -25,40 -5,20 C 15,40 40,20 20,-5 C 40,-20 15,-40 0,-8 Z" fill="#E07A5F" class="ink-line" />
+      <circle cx="0" cy="0" r="12" fill="#2C2825" />
+      <circle cx="0" cy="0" r="6" fill="#E9C46A" />
+    </g>
+
+    <!-- POT ASSEMBLY -->
+    <!-- Soil Mound -->
+    <ellipse cx="300" cy="340" rx="90" ry="20" fill="#3D3835" class="ink-line" />
+
+    <!-- Terracotta Pot Body -->
+    <path d="M 215,370 L 235,500 C 238,515 362,515 365,500 L 385,370 Z" fill="#E07A5F" class="ink-thick" />
+
+    <!-- Terracotta Pot Rim -->
+    <rect x="200" y="325" width="200" height="45" rx="10" class="ink-thick" fill="#E07A5F" />
+    <path class="ink-thin" d="M 205,340 C 270,345 330,345 395,340" stroke-dasharray="6,4" />
+
+  </g>
+</svg>
