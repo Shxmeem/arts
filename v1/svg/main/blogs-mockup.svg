@@ -1,9 +1,4 @@
-import re
-
-# Create a simplified SVG mockup of a blog post
-# Simplified content, desktop mode, doodle style but less dense.
-
-svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
   <defs>
     <!-- Simple doodle filters for hand-drawn / sketchy line effect -->
     <filter id="doodle-rough" x="-5%" y="-5%" width="110%" height="110%">
