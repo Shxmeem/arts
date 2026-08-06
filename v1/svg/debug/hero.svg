@@ -1,1 +1,120 @@
-<svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="300" height="300" viewBox="0 0 300 300"><defs><style>.cls-1{fill:#313131;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M125.7,211a7.7,7.7,0,0,0-1,.1v1a9.2,9.2,0,0,0,1,0h47a7.7,7.7,0,0,0,1-.1v-1a9.2,9.2,0,0,0-1,0Z"/><path class="cls-1" d="M226.7,133.6a7.7,7.7,0,0,0-.1-1H111.4a7.7,7.7,0,0,0-.1,1v.3h0v114a7.7,7.7,0,0,0,.1,1H226.6a7.7,7.7,0,0,0,.1-1v-114Zm-.6,114.7H112V133.2H226.1Z"/><path class="cls-1" d="M208.7,143.6l-.1-.9L208.3,143.6l-.9-.1-.1.9-.9.1.1.9.9.1.1.9L208.3,145.4l.9.1.1-.9L210.2,144.6Z"/><rect class="cls-1" x="210.6" y="143.8" width="1.9" height="1.6"/><path class="cls-1" d="M208.7,148.8l-.1-.9L208.3,148.8l-.9-.1-.1.9-.9.1.1.9.9.1.1.9L208.3,150.6l.9.1.1-.9.9.1.1-.9L210.2,149.8Z"/><rect class="cls-1" x="210.6" y="149" width="1.9" height="1.6"/><path class="cls-1" d="M208.7,154l-.1-.9L208.3,154l-.9-.1-.1.9-.9.1.1.9.9.1.1.9L208.3,155.8l.9.1.1-.9.9.1.1-.9L210.2,155Zm1.9,1.6h-1.9L210.6,155Zm0-1.6h-1.9L210.6,153.4Z"/><path class="cls-1" d="M208.7,159.2l-.1-.9L208.3,159.2l-.9-.1-.1.9-.9.1.1.9.9.1.1.9L208.3,161l.9.1.1-.9.9.1.1-.9L210.2,160.2Z"/><rect class="cls-1" x="210.6" y="159.4" width="1.9" height="1.6"/><path class="cls-1" d="M208.7,164.4l-.1-.9L208.3,164.4l-.9-.1-.1.9-.9.1.1.9.9.1.1.9L208.3,166.2l.9.1.1-.9.9.1.1-.9L210.2,165.4Zm1.9,1.6h-1.9L210.6,165.6Zm0-1.6h-1.9L210.6,163.8Z"/><path class="cls-1" d="M208.7,169.6l-.1-.9L208.3,169.6l-.9-.1-.1.9-.9.1.1.9.9.1.1.9L208.3,171.4l.9.1.1-.9.9.1.1-.9L210.2,170.6Z"/><rect class="cls-1" x="210.6" y="169.8" width="1.9" height="1.6"/><path class="cls-1" d="M208.7,174.8l-.1-.9L208.3,174.8l-.9-.1-.1.9-.9.1.1.9.9.1.1.9L208.3,176.6l.9.1.1-.9.9.1.1-.9L210.2,175.8Z"/><rect class="cls-1" x="210.6" y="175" width="1.9" height="1.6"/><path class="cls-1" d="M208.7,180l-.1-.9L208.3,180l-.9-.1-.1.9-.9.1.1.9.9.1.1.9L208.3,181.8l.9.1.1-.9.9.1.1-.9L210.2,181Zm1.9,1.6h-1.9L210.6,181Zm0-1.6h-1.9L210.6,179.4Z"/><path class="cls-1" d="M208.7,185.2l-.1-.9L208.3,185.2l-.9-.1-.1.9-.9.1.1.9.9.1.1.9L208.3,187l.9.1.1-.9.9.1.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <g stroke="#111111" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Desk Surface Line -->
+    <path d="M 50,480 Q 400,475 750,480" stroke-width="4"/>
+    <path d="M 45,483 Q 395,478 755,482" stroke-width="2"/>
+
+    <!-- Camera (Left) -->
+    <path d="M 120,340 C 120,335 125,330 130,330 L 290,330 C 295,330 300,335 300,340 L 305,450 C 305,458 298,465 290,465 L 130,465 C 122,465 115,458 115,450 Z" stroke-width="4"/>
+    <path d="M 122,343 L 288,333 L 302,448 L 118,452 Z" stroke-width="1.5"/>
+    <path d="M 180,330 L 190,305 C 192,300 198,300 200,305 L 230,305 C 232,300 238,300 240,305 L 250,330" stroke-width="3"/>
+    <path d="M 140,330 L 140,320 L 160,320 L 160,330" stroke-width="3"/>
+    <circle cx="210" cy="400" r="55" stroke-width="4"/>
+    <circle cx="208" cy="402" r="57" stroke-width="1.5"/>
+    <circle cx="210" cy="400" r="42" stroke-width="3"/>
+    <circle cx="210" cy="400" r="25" stroke-width="3.5"/>
+    <path d="M 225,380 C 235,385 240,395 238,408" stroke-width="2.5"/>
+    <rect x="255" y="350" width="25" height="18" rx="3" stroke-width="3"/>
+    <circle cx="145" cy="360" r="8" stroke-width="2.5"/>
+
+    <!-- Notebook & Pen (Center) -->
+    <path d="M 330,360 L 480,330 C 485,329 490,333 491,338 L 525,455 C 526,460 522,465 517,466 L 365,496 C 360,497 355,493 354,488 Z" stroke-width="4"/>
+    <!-- Notebook Spirals -->
+    <path d="M 340,358 C 335,350 332,363 338,366" stroke-width="3"/>
+    <path d="M 355,355 C 350,347 347,360 353,363" stroke-width="3"/>
+    <path d="M 370,352 C 365,344 362,357 368,360" stroke-width="3"/>
+    <path d="M 385,349 C 380,341 377,354 383,357" stroke-width="3"/>
+    <path d="M 400,346 C 395,338 392,351 398,354" stroke-width="3"/>
+    <path d="M 415,343 C 410,335 407,348 413,351" stroke-width="3"/>
+    <path d="M 430,340 C 425,332 422,345 428,348" stroke-width="3"/>
+    <path d="M 445,337 C 440,329 437,342 443,345" stroke-width="3"/>
+    <path d="M 460,334 C 455,326 452,339 458,342" stroke-width="3"/>
+    <path d="M 475,331 C 470,323 467,336 473,339" stroke-width="3"/>
+    <!-- Notebook Scribble Lines -->
+    <path d="M 375,385 Q 425,375 475,365" stroke-width="1.5" stroke-dasharray="4,2,8,3"/>
+    <path d="M 378,400 Q 428,390 478,380" stroke-width="1.5" stroke-dasharray="4,2,8,3"/>
+    <path d="M 381,415 Q 431,405 481,395" stroke-width="1.5" stroke-dasharray="4,2,8,3"/>
+    <path d="M 384,430 Q 434,420 484,410" stroke-width="1.5" stroke-dasharray="4,2,8,3"/>
+    <path d="M 387,445 Q 437,435 487,425" stroke-width="1.5" stroke-dasharray="4,2,8,3"/>
+    <!-- Pen -->
+    <path d="M 430,310 L 490,470" stroke-width="3.5"/>
+    <path d="M 430,310 L 426,300 L 434,305 Z" stroke-width="3" fill="#111111"/>
+    <path d="M 480,440 L 495,445" stroke-width="2.5"/>
+
+    <!-- Coffee Mug (Right-Middle) -->
+    <path d="M 550,380 C 548,440 555,470 610,470 C 665,470 670,440 668,380 Z" stroke-width="4"/>
+    <ellipse cx="609" cy="380" rx="59" ry="12" stroke-width="3.5"/>
+    <ellipse cx="609" cy="383" rx="50" ry="9" stroke-width="2"/>
+    <path d="M 667,395 C 700,395 705,445 664,455" stroke-width="4"/>
+    <path d="M 666,403 C 690,405 693,438 663,447" stroke-width="2"/>
+    <!-- Steam -->
+    <path d="M 580,350 Q 570,320 590,300 T 580,270" stroke-width="2"/>
+    <path d="M 610,355 Q 625,330 605,305 T 620,275" stroke-width="2.5"/>
+    <path d="M 640,350 Q 630,325 645,300" stroke-width="2"/>
+
+    <!-- Vase & Flowers (Right) -->
+    <path d="M 690,350 C 670,300 750,300 730,350 C 720,380 750,450 730,465 C 710,480 690,450 690,350 Z" stroke-width="3.5"/>
+    <!-- Stems -->
+    <path d="M 710,310 Q 680,220 660,180" stroke-width="3"/>
+    <path d="M 710,310 Q 715,200 720,150" stroke-width="2.5"/>
+    <path d="M 710,310 Q 740,230 760,190" stroke-width="3"/>
+    <!-- Leaves -->
+    <path d="M 685,250 Q 660,240 675,260 Z" stroke-width="2" fill="#111111"/>
+    <path d="M 725,230 Q 750,220 735,245 Z" stroke-width="2" fill="#111111"/>
+    <!-- Flower 1 -->
+    <circle cx="660" cy="180" r="12" stroke-width="3"/>
+    <circle cx="640" cy="170" r="10" stroke-width="2"/>
+    <circle cx="650" cy="155" r="10" stroke-width="2"/>
+    <circle cx="670" cy="160" r="10" stroke-width="2"/>
+    <circle cx="675" cy="180" r="10" stroke-width="2"/>
+    <circle cx="665" cy="195" r="10" stroke-width="2"/>
+    <circle cx="645" cy="190" r="10" stroke-width="2"/>
+    <!-- Flower 2 -->
+    <circle cx="720" cy="150" r="15" stroke-width="3"/>
+    <circle cx="700" cy="135" r="12" stroke-width="2"/>
+    <circle cx="720" cy="125" r="12" stroke-width="2"/>
+    <circle cx="740" cy="135" r="12" stroke-width="2"/>
+    <circle cx="745" cy="155" r="12" stroke-width="2"/>
+    <circle cx="730" cy="170" r="12" stroke-width="2"/>
+    <circle cx="705" cy="165" r="12" stroke-width="2"/>
+    <!-- Flower 3 -->
+    <circle cx="760" cy="190" r="10" stroke-width="3"/>
+    <circle cx="750" cy="175" r="9" stroke-width="2"/>
+    <circle cx="770" cy="175" r="9" stroke-width="2"/>
+    <circle cx="775" cy="195" r="9" stroke-width="2"/>
+    <circle cx="760" cy="205" r="9" stroke-width="2"/>
+    <circle cx="745" cy="195" r="9" stroke-width="2"/>
+
+    <!-- Handwritten Arrows & Doodles -->
+    <!-- Arrow to Camera -->
+    <path d="M 90,260 Q 130,240 170,280" stroke-width="2.5" stroke-dasharray="6,3"/>
+    <path d="M 155,270 L 170,280 L 165,260" stroke-width="3" fill="#111111"/>
+    
+    <!-- Arrow to Notebook -->
+    <path d="M 320,240 C 350,200 380,280 400,230 C 410,210 390,200 385,220 C 380,250 410,300 420,310" stroke-width="2.5"/>
+    <path d="M 410,300 L 420,310 L 423,295" stroke-width="3" fill="#111111"/>
+
+    <!-- Arrow to Coffee -->
+    <path d="M 500,230 C 540,200 600,210 610,260" stroke-width="2.5"/>
+    <path d="M 600,248 L 610,260 L 618,248" stroke-width="3" fill="#111111"/>
+
+    <!-- Heart Doodle -->
+    <path d="M 640,240 C 640,230 625,220 615,235 C 605,220 590,230 590,240 C 590,255 615,270 615,270 C 615,270 640,255 640,240 Z" stroke-width="2"/>
+
+    <!-- Sparkles / Stars Doodles -->
+    <!-- Star 1 -->
+    <path d="M 110,288 L 110,312 M 98,300 L 122,300 M 104,294 L 116,306 M 116,294 L 104,306" stroke-width="2"/>
+    <!-- Star 2 -->
+    <path d="M 280,268 L 280,292 M 268,280 L 292,280 M 274,274 L 286,286 M 286,274 L 274,286" stroke-width="2"/>
+    <!-- Star 3 -->
+    <path d="M 510,268 L 510,292 M 498,280 L 522,280 M 504,274 L 516,286 M 516,274 L 504,286" stroke-width="2"/>
+    <!-- Star 4 -->
+    <path d="M 630,128 L 630,152 M 618,140 L 642,140 M 624,134 L 636,146 M 636,134 L 624,146" stroke-width="2"/>
+    <!-- Star 5 -->
+    <path d="M 770,268 L 770,292 M 758,280 L 782,280 M 764,274 L 776,286 M 776,274 L 764,286" stroke-width="2"/>
+
+    <!-- Scribble accent lines under desk -->
+    <path d="M 150,510 Q 200,515 250,508" stroke-width="2"/>
+    <path d="M 400,515 Q 460,520 520,512" stroke-width="2"/>
+  </g>
+</svg>
