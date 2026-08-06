@@ -192,15 +192,14 @@ body {
 
 .section__img {
   width: 100%;
-  max-width: 300px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
 .section__img--large {
-  max-width: 600px;
   width: 100%;
+  height: auto;
 }
 
 .section__label {
@@ -217,7 +216,7 @@ body {
 
 .section__image-wrapper .section__img {
   width: 100%;
-  max-width: 600px;
+  height: auto;
 }
 
 /* ===== TAGS ===== */
@@ -339,15 +338,6 @@ body {
   .section__subtitle {
     font-size: 1.2rem;
   }
-  .section__img {
-    max-width: 200px;
-  }
-  .section__img--large {
-    max-width: 100%;
-  }
-  .section__image-wrapper .section__img {
-    max-width: 100%;
-  }
   .faq-section h2 {
     font-size: 2rem;
   }
@@ -375,9 +365,6 @@ body {
   }
   .tag {
     font-size: 0.95rem;
-  }
-  .section__img {
-    max-width: 160px;
   }
 }
 
