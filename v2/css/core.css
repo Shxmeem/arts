@@ -88,45 +88,45 @@ body {
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  border: 2px solid #000000;
+  border: 2px solid #7c3aed;
   border-radius: 9999px;
   background: transparent;
-  color: #000000;
+  color: #7c3aed;
   transition: all 0.2s ease;
   text-decoration: none;
 }
 
 .btn--primary {
-  background: #000000;
+  background: #7c3aed;
   color: #ffffff;
-  border-color: #000000;
+  border-color: #7c3aed;
 }
 
 .btn--primary:hover {
-  background: #333333;
-  border-color: #333333;
+  background: #6d28d9;
+  border-color: #6d28d9;
 }
 
 .btn--secondary {
   background: transparent;
-  color: #000000;
-  border-color: #000000;
+  color: #7c3aed;
+  border-color: #7c3aed;
 }
 
 .btn--secondary:hover {
-  background: #000000;
+  background: #7c3aed;
   color: #ffffff;
 }
 
 .hero__image {
   margin-top: 1.5rem;
+  width: 100%;
 }
 
 .hero__img {
-  max-width: 90%;
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
 }
 
 /* ===== SECTIONS ===== */
@@ -191,14 +191,16 @@ body {
 }
 
 .section__img {
-  max-width: 200px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
 .section__img--large {
-  max-width: 400px;
+  max-width: 600px;
+  width: 100%;
 }
 
 .section__label {
@@ -210,6 +212,12 @@ body {
 
 .section__image-wrapper {
   margin: 1.5rem 0;
+  width: 100%;
+}
+
+.section__image-wrapper .section__img {
+  width: 100%;
+  max-width: 600px;
 }
 
 /* ===== TAGS ===== */
@@ -283,7 +291,7 @@ body {
 }
 
 .faq-question i {
-  color: #000000;
+  color: #7c3aed;
   transition: transform 0.3s ease;
 }
 
@@ -332,10 +340,13 @@ body {
     font-size: 1.2rem;
   }
   .section__img {
-    max-width: 150px;
+    max-width: 200px;
   }
   .section__img--large {
-    max-width: 280px;
+    max-width: 100%;
+  }
+  .section__image-wrapper .section__img {
+    max-width: 100%;
   }
   .faq-section h2 {
     font-size: 2rem;
@@ -365,6 +376,9 @@ body {
   .tag {
     font-size: 0.95rem;
   }
+  .section__img {
+    max-width: 160px;
+  }
 }
 
 /* ===== SCROLL REVEAL (keep for existing functionality) ===== */
@@ -387,7 +401,7 @@ body {
 
 /* ===== UTILITY ===== */
 *:focus-visible {
-  outline: 2px solid #000000;
+  outline: 2px solid #7c3aed;
   outline-offset: 2px;
 }
 
@@ -400,12 +414,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #000000;
+  background: #7c3aed;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #333333;
+  background: #6d28d9;
 }
 
 @media (prefers-reduced-motion: reduce) {
