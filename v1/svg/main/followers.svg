@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="900"
+     height="180"
+     viewBox="0 0 900 180"
+     fill="none">
+
+    <style>
+        .ink{
+            stroke:#111;
+            stroke-width:3.2;
+            stroke-linecap:round;
+            stroke-linejoin:round;
+            fill:none;
+        }
+        .txt{
+            font-family:"Comic Sans MS","Patrick Hand","Caveat",sans-serif;
+            fill:#111;
+        }
+    </style>
+
+    <!-- Outer doodle box -->
+    <path class="ink"
+        d="M28 34
+           Q32 20 52 22
+           H848
+           Q872 24 874 42
+           V140
+           Q872 160 848 158
+           H52
+           Q28 160 26 140
+           V40
+           Q26 30 28 34Z"/>
+
+    <!-- Avatar -->
+    <circle class="ink" cx="95" cy="90" r="46"/>
+    <circle class="ink" cx="95" cy="90" r="28"/>
+
+    <!-- Simple camera -->
+    <rect class="ink"
+          x="77"
+          y="72"
+          width="36"
+          height="36"
+          rx="8"/>
+    <circle class="ink"
+            cx="95"
+            cy="90"
+            r="10"/>
+    <circle
+        cx="106"
+        cy="80"
+        r="2.8"
+        fill="#111"/>
+
+    <!-- Username -->
+    <text x="170"
+          y="82"
+          class="txt"
+          font-size="34">
+        username
+    </text>
+
+    <!-- Underline -->
+    <path class="ink"
+          d="M170 94
+             Q240 104 315 95"/>
+
+    <!-- Small heart -->
+    <path class="ink"
+          d="M335 56
+             C335 48 347 48 347 57
+             C347 48 360 48 360 57
+             C360 67 347 74 347 74
+             C347 74 335 67 335 56Z"/>
+
+    <!-- Followers -->
+    <text x="470"
+          y="75"
+          class="txt"
+          font-size="44"
+          text-anchor="middle">
+        4
+    </text>
+
+    <text x="470"
+          y="108"
+          class="txt"
+          font-size="24"
+          text-anchor="middle">
+        Followers
+    </text>
+
+    <!-- Divider -->
+    <path class="ink"
+          d="M585 55
+             Q586 90 585 125"/>
+
+    <!-- Following -->
+    <text x="705"
+          y="75"
+          class="txt"
+          font-size="44"
+          text-anchor="middle">
+        3
+    </text>
+
+    <text x="705"
+          y="108"
+          class="txt"
+          font-size="24"
+          text-anchor="middle">
+        Following
+    </text>
+
+    <!-- Doodle spark -->
+    <path class="ink" d="M510 36 L515 24"/>
+    <path class="ink" d="M525 40 L536 31"/>
+    <path class="ink" d="M533 52 L546 49"/>
+
+</svg>
