@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" fill="none" viewBox="0 0 900 180"><style>.ink{stroke:#111;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;fill:none}.txt{font-family:&quot;Comic Sans MS&quot;,&quot;Patrick Hand&quot;,&quot;Caveat&quot;,sans-serif;fill:#111}</style><path d="M28 34 Q32 20 52 22 H848 Q872 24 874 42 V140 Q872 160 848 158 H52 Q28 160 26 140 V40 Q26 30 28 34Z" class="ink"/><circle cx="95" cy="90" r="46" class="ink"/><circle cx="95" cy="90" r="28" class="ink"/><rect width="36" height="36" x="77" y="72" class="ink" rx="8"/><circle cx="95" cy="90" r="10" class="ink"/><circle cx="106" cy="80" r="2.8" fill="#111"/><text x="170" y="82" class="txt" font-size="34">username</text><path d="M170 94 Q240 104 315 95" class="ink"/><path d="M335 56 C335 48 347 48 347 57 C347 48 360 48 360 57 C360 67 347 74 347 74 C347 74 335 67 335 56Z" class="ink"/><text x="470" y="75" class="txt" font-size="44" text-anchor="middle">4</text><text x="470" y="108" class="txt" font-size="24" text-anchor="middle">Followers</text><path d="M585 55 Q586 90 585 125" class="ink"/><text x="705" y="75" class="txt" font-size="44" text-anchor="middle">3</text><text x="705" y="108" class="txt" font-size="24" text-anchor="middle">Following</text><path d="M510 36 L515 24" class="ink"/><path d="M525 40 L536 31" class="ink"/><path d="M533 52 L546 49" class="ink"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" fill="none" viewBox="0 0 900 180">
+  <style>
+    .ink{stroke:#111;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;fill:none}
+    .txt{font-family:"Comic Sans MS","Patrick Hand","Caveat",sans-serif;fill:#111}
+  </style>
+  <path d="M28 34 Q32 20 52 22 H848 Q872 24 874 42 V140 Q872 160 848 158 H52 Q28 160 26 140 V40 Q26 30 28 34Z" class="ink"/>
+  <circle cx="95" cy="90" r="46" class="ink"/>
+  <circle cx="95" cy="90" r="28" class="ink"/>
+  <rect width="36" height="36" x="77" y="72" class="ink" rx="8"/>
+  <circle cx="95" cy="90" r="10" class="ink"/>
+  <circle cx="106" cy="80" r="2.8" fill="#111"/>
+  <text x="170" y="82" class="txt" font-size="34">username</text>
+  <path d="M170 94 Q240 104 315 95" class="ink"/>
+  <path d="M335 56 C335 48 347 48 347 57 C347 48 360 48 360 57 C360 67 347 74 347 74 C347 74 335 67 335 56Z" class="ink"/>
+  <text x="470" y="75" class="txt" font-size="44" text-anchor="middle">4</text>
+  <text x="470" y="108" class="txt" font-size="24" text-anchor="middle">Followers</text>
+  <path d="M585 55 Q586 90 585 125" class="ink"/>
+  <text x="705" y="75" class="txt" font-size="44" text-anchor="middle">3</text>
+  <text x="705" y="108" class="txt" font-size="24" text-anchor="middle">Following</text>
+  <path d="M510 36 L515 24" class="ink"/>
+  <path d="M525 40 L536 31" class="ink"/>
+  <path d="M533 52 L546 49" class="ink"/>
+</svg>
